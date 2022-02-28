@@ -1,11 +1,13 @@
-<h1>{{title}}</h1>
-<h2 [style.color]='color'>{{currentCustom}}</h2>
+<h1>{{ title }}</h1>
+<h2 [style.color]="color">{{ currentCustom }}</h2>
 <p>
-  {{obj.name | uppercase}}
-  age -- {{getAge() }}
+  {{ obj.name | uppercase }}
+  age -- {{ getAge() }}
 </p>
-<label>Type something:
-  <input #customerInput>{{customerInput.value}}
+<label
+  >Type something: <input #customerInput />{{ customerInput.value }}
 </label>
 <button (click)="deleteHero()">Delete hero</button>
-<app-dashboard msg="{{title}}" (changeColorRes)="changeColor($event)"></app-dashboard>
+<app-dashboard
+  msg="{{ title }}"
+  (changeColorRes)="changeColor($event)"></app-dashboard>
