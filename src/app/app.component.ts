@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-project';
+  currentCustom: String = '123';
+  color = 'blue'
+  obj = {
+    name: 'ailiang'
+  }
+  getAge() {
+    return 18
+  }
+  changeColor(isRed: Boolean) {
+    if(isRed) {
+      this.color = 'red'
+    }
+  }
+  deleteHero() {
+    alert('hello')
+  }
 }
